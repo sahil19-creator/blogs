@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+   
+</style>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12  dflex flex-direction-column flex-wrap mx-auto">
+                <div class="dflex flex-wrap flex-direction-column  mt-2 ttl">
+                    {% for id,dict in data.items  %}
+                    {% for title,desc in dict.items %}
+
+                  <h1>{{title}}</h1>
+                  <p class="date_headings"><strong>written on {{date}}</strong></h5></p>
+                  <p class="b_desc">
+                      {{desc}}
+                  </p>
+                  {% endfor %}
+                  {% endfor %}
+            
+        </div>
+            </div>
+
+        </div>     
+    </div>
+    {% endblock %}
+

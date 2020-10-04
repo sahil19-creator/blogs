@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{%include 'header.html'%}
+
+    {% block content %}
+    <title>
+       tags
+    </title>
+    <body>
+  
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 ml-5  ">
+                    <h1>Tags</h1>
+                    <div class="link_container mt-5 ml-2">
+                        {% for t_id,tags in results.items  %}
+                      
+                            {% if t_id %}
+              <span class="link_container mr-3">  <a class="j_links" href="/tag_list/{{t_id}}">{{tags}}</a></span> 
+              {% else %}
+              <span class="link_container mr-3">  <a  class="j_links" href="#">{{tags}}</a></span> 
+              {% endif %}
+         
+              {% endfor %}
+                
+            </div>
+                </div>
+
+            </div>     
+        </div>
+        {% endblock %}
+    </body>
+</html>
+
+
+
+
+{%include 'footer.html' %}

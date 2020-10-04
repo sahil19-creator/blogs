@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+
+    <body>
+        {% block content  %}
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-8 ml-4 ">
+                    <h1>Blog Archieve</h1>
+                  
+                    <ul class=" ar_links ml-1 mt-4 ">
+                        
+                        {% for year,dict in data.items %}
+                        
+                        
+                        <li class="ml-5 "><a href="year_list/{{year}}">{{year}}</a>
+                      
+                            <ul class="offset-1 mb-4">
+                                {% for months in dict%}
+                            
+                                <li class="mt-2" ><a id="month_name" href="month_list/{{year}}/{{months.0}}"><span class="month_e">{{months.0}}</span></a>&mdash;<span> {{months.1}} {% if months > 1 %}entries {% else %} entry</span>{% endif %}</li>
+                              
+                         
+                                {% endfor %}
+             
+                     
+                            </ul>
+                            {% endfor %}
+                        </li>
+                      
+                        
+                   
+                    </ul>
+                  
+                </div>
+
+            </div>     
+        </div>
+        <script>
+           
+        </script>
+    {% endblock %}
+    </body>
+</html>
+
+
+
+
+{%include 'footer.html' %}

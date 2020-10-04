@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.date_box {
+    color: #7B8894;
+    font-weight: lighter;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: italic;
+    font-size:14px;
+    width: 45%;
+    display: inline;
+    text-align: right;
+}
+.date_headings{
+    font-style: italic;
+    font-size: 14px;
+}
+.ar_links{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.ar_links a{
+    font-weight: bold;
+}
+a {
+    color: #8F4B5D;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.p{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.b_desc{
+    font-size:20px;
+}
+.link_headings{
+    font-weight: 500;
+    font-size:17px;
+}
+.detail_contianer{
+    width: auto;
+}
+
+.ttl {
+    font-size: 45px;
+    font-family: 'Questrial', sans-serif;
+    
+}
+.ttl  a{
+    font-size: 45px;
+    font-family: 'Questrial', sans-serif;
+    text-decoration:none;
+    font-weight: lighter;
+    
+}
+.ttl  a:hover{
+    text-decoration:underline;
+    
+}
+
+h1 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 52px;
+    line-height: 56px;
+    font-weight: lighter;
+    color: #3D3F4F;
+}
+.nv-links a{
+    font-weight:lighter;
+}
+.pagination{
+    text-align:center;
+    margin:36px 0 0 0;
+}
+.header {
+    display: flex;
+    max-width: 850px;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin:  auto;
+    margin-top:50px;
+    margin-bottom: 20px;;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+.link ul {
+    list-style: none;
+    display: flex;
+}
+
+.link ul li {
+    padding: 0px 10px;
+}
+
+.dashboard_area {
+    max-width: 880px;
+    margin: 20px auto;
+    transition: 1s;
+}
+
+.l_cont {
+    display: flex;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.data_container {
+    display: flex;
+    margin-bottom: 50px;
+    width: 700px;
+}
+
+.link_container {
+    margin-top: 30px;
+}
+
+.endFooter {
+    display: flex;
+    max-width: 980px;
+    margin: 48px auto;
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    color: #7B8BA8;
+    font-size: 13px;
+}

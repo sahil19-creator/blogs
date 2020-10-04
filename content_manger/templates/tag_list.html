@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+    <title>Post</title>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12  dflex flex-direction-column flex-wrap mx-auto">
+                <div class="dflex flex-direction-column  mt-2">
+                  <h1 class="ttl">Entries <a href="/tags">tagged</a> “{{names}}”</h1>
+                    <ul class="ml-5 mt-4">
+                        {% for id,dict in data.items  %}
+                        {% for date,title in dict.items %}
+                        <li><a href="/view/{{id}}">{{title}}</a>&mdash; written on   {{date}}</li>
+                        {% endfor %}
+                        {% endfor %}
+                    </ul>
+            
+        </div>
+            </div>
+
+        </div>     
+    </div>
+    <script>
+       
+    </script>
+{% endblock %}
+
+
+
+
+
+</html>

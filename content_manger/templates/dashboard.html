@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+<html>
+   
+    <section class="dashboard_area">
+        {% block content %}
+        
+        <div class="l_cont">
+
+            {% for id in pages %}
+        
+        <div class="data_container ">
+
+            <div class="date_box ">
+               {{id.2}}</div>
+          
+            <div class="detail_contianer ml-4 "><strong class="link_headings"></strong><a href="view/{{id.1}}">{{id.0}}</a><strong>&mdash;</strong>{{id.3}}</div>
+       
+        </div>
+        {% endfor %}
+        <div class="pagination">
+            {% if pages.has_previous %}
+            <span><a href="?page={{ pages.previous_page_number }}">« Previous</a></span>
+            {% else %}
+            <span><a class="disable">« Previous</a></span>
+            {%endif%}
+          
+            &emsp;—&emsp;<strong>{{ pages.number }}</strong>&emsp;—&emsp;
+           
+            {% if pages.has_next %}
+                <span><a href="/?page={{ pages.next_page_number }}">Next »</a></span>
+            {% else %}
+            <span><a class="disable">Next »</a></span>
+            {%endif%}
+           
+            
+
+
+            </div>
+        {% endblock %}
+    </section>
+
+
+
+
+
+</html>
